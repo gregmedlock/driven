@@ -246,7 +246,7 @@ class ExpressionProfile(object):
         ValueError
 
         """
-        if not self._p_values.all():
+        if not self._p_values:
             raise ValueError("No p-values defined.")
         else:
             return self._p_values
