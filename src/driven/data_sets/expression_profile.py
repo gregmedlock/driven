@@ -212,7 +212,7 @@ class ExpressionProfile(object):
             conditions = self.conditions
         else:
             expression = np.concatenate((self.expression, self.p_values),
-                                        axis=0)
+                                        axis=1)
             conditions = self.conditions + self.p_value_columns
 
         return pd.DataFrame(expression,
